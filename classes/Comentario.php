@@ -1,6 +1,6 @@
 <?php
 
-class Comentário
+class Comentario
 {
 	public function retornarComentarios($filtrar, $offset, $limit)
 	{
