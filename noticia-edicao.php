@@ -34,7 +34,7 @@ if (!isset($noticia_id)) {
 				class="textarea--conteudo"><?php echo $noticia['conteudo'] ?></textarea>
 			<div class="botoes">
 				<a type="submit" class="btn btn-danger mr-10"
-					href="excluir-noticia.php?id=<?php echo $noticia['id']; ?>">Excluir</a>
+					href="noticia-exclusao.php?id=<?php echo $noticia['id']; ?>">Excluir</a>
 				<a type="submit" class="btn btn-default" href="index.php">Voltar</a>
 				<a class="btn btn-success ml-10" href='javascript:editar.submit()' ">Atualizar</a>
                 </div>
