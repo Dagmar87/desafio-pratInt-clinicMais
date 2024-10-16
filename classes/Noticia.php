@@ -10,8 +10,12 @@ class Noticia
 			$sql = "SELECT 
 			noticias.id as id,
 			noticias.titulo as titulo,
-			noticias.conteudo as conteudo
-			FROM noticias";
+			noticias.conteudo as conteudo,
+			comentarios.nome as nome_comentario,
+			comentarios.comentario as texto_comentario
+			FROM noticias
+			INNER JOIN comentarios 
+      ON comentarios.id = noticias.comentario_id";
 
 			if (!empty($filtrar)) {
 				$sql .= "WHERE titulo LIKE ? ORDER BY id DESC LIMIT $offset, $limit";
