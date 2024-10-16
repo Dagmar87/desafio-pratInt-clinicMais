@@ -5,11 +5,12 @@ require_once 'classes/Noticia.php';
 
 $n = new Noticia();
 
+$adicao = null;
 if (isset($_POST['titulo']) && isset($_POST['conteudo'])) {
 
 	$titulo         = addslashes($_POST['titulo']);
 	$conteudo       = addslashes($_POST['conteudo']);
-	$categoria      = $n->adicionarNoticia($titulo, $conteudo);
+	$adicao      = $n->adicionarNoticia($titulo, $conteudo);
 }
 
 ?>
@@ -25,6 +26,16 @@ if (isset($_POST['titulo']) && isset($_POST['conteudo'])) {
 				<a class="btn btn-success ml-10" href='javascript:cadastrar.submit()'>Cadastrar</a>
 			</div>
 		</form>
+		<?php if ($adicao): ?>
+			<div class="container alerta sucesso">
+				Noticia cadastrada com sucesso!
+			</div>
+		<?php endif; ?>
+		<?php if (!is_null($adicao) && !$adicao): ?>
+			<div class="container alerta erro">
+				Preencha todos os campos!
+			</div>
+		<?php endif; ?>
 	</div>
 </div>
 
