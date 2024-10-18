@@ -22,7 +22,7 @@ if (isset($_POST['titulo']) && isset($_POST['conteudo'])) {
 			<input type="text" name="titulo" placeholder="Titulo da noticia" class="input--titulo" />
 			<textarea name="conteudo" placeholder="Conteúdo da notícia" class="textarea--conteudo"></textarea>
 			<div class="botoes">
-				<a type="submit" class="btn btn-default" href="index.php">Voltar</a>
+				<a type="submit" class="btn btn-default" href="blog-noticia.php">Voltar</a>
 				<a class="btn btn-success ml-10" href='javascript:cadastrar.submit()'>Cadastrar</a>
 			</div>
 		</form>

@@ -6,7 +6,7 @@ require_once 'classes/Noticia.php';
 $noticia_id = $_GET['id'];
 if (!isset($noticia_id)) {
 ?><script type="text/javascript">
-		window.location.href = "index.php";
+		window.location.href = "blog-noticia.php";
 	</script><?php
 						exit;
 					}
@@ -35,7 +35,7 @@ if (!isset($noticia_id)) {
 			<div class="botoes">
 				<a type="submit" class="btn btn-danger mr-10"
 					href="noticia-exclusao.php?id=<?php echo $noticia['id']; ?>">Excluir</a>
-				<a type="submit" class="btn btn-default" href="index.php">Voltar</a>
+				<a type="submit" class="btn btn-default" href="blog-noticia.php">Voltar</a>
 				<a class="btn btn-success ml-10" href='javascript:editar.submit()' ">Atualizar</a>
                 </div>
             </form>

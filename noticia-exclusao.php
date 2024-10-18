@@ -9,4 +9,4 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
 	$n->excluirNoticia($_GET['id']);
 }
 
-header("Location: index.php");
+header("Location: blog-noticia.php");
