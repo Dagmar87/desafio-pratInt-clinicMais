@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once 'pages/includes/header.php';
+require_once 'header-noticia.php';
 require_once 'classes/Noticia.php';
 
 $n = new Noticia();
