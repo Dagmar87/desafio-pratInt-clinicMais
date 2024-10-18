@@ -1,6 +1,6 @@
 <?php
 
-require_once 'pages/includes/header.php';
+require_once 'header-noticia.php';
 require_once 'classes/Comentario.php';
 
 $c = new Comentario();

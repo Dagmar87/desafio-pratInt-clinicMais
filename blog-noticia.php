@@ -26,9 +26,15 @@ $noticias = $n->retornarNoticias($filtrar, $offset, $limit);
 		<div class="noticias--box">
 			<h1><?php echo $noticia['titulo']; ?></h1>
 			<p><?php echo $noticia['conteudo']; ?></p>
+			<h1><?php echo $noticia['nome_comentario']; ?></h1>
+			<p><?php echo $noticia['texto_comentario']; ?></p>
 			<a type="submit" class="btn btn--noticias"
 				href="noticia-edicao.php?id=<?php echo $noticia['id']; ?>">
 				Acessar
+			</a>
+			<a type="submit" class="btn btn--comentario"
+				href="comentario-cadastro.php">
+				Adicionar comentario
 			</a>
 		</div>
 	<?php endforeach; ?>

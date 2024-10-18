@@ -198,6 +198,11 @@ padding: 10px;
 	align-self: center;
 	background: #305DB1;
 }
+.btn--comentario {
+	margin-top: 10px;
+	align-self: center;
+	background: #30b13f;
+}
 .form--cadastrar, .form--editar {
 	width: 100%;
 }
